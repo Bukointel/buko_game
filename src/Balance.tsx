@@ -53,10 +53,10 @@ export default () => {
     return (
         <div className='Balance'>
             <div className='Balance_count'>
-                Bukos: {numPrettier(balance)}
+                TAILS: {numPrettier(balance)}
             </div>
             <div className='Balance_pps'>
-                Bukos per sec: {GameStore.getBPS()}
+                TAILS per sec: {GameStore.getBPS()}
             </div>
         </div>
     );
