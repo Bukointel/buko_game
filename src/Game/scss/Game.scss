@@ -1,0 +1,40 @@
+.Game {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &_wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &_buko {
+        img {
+            width: 200px;
+        }
+    }
+
+    &_shine {
+
+        img {
+            opacity: .2;
+            width: 300px;
+            height: 300px;
+            animation: rotate 40s infinite linear;
+
+            @keyframes rotate {
+                0% {
+                    rotate: 0deg;
+                }
+
+                100% {
+                    rotate: 360deg;
+                }
+            }
+        }
+
+    }
+
+}

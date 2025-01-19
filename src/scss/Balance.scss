@@ -1,0 +1,27 @@
+.Balance {
+    position: absolute;
+    z-index: 99;
+    // top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #2d719988, #2d719988, #2d719900);
+
+    &_count {
+        font-size: 32px;
+        font-weight: 600;
+        text-shadow: 0px 0px 10px #000;
+        width: 100%;
+        text-align: center;
+    }
+
+    &_pps {
+        font-size: 20px;
+        font-weight: 600;
+        text-shadow: 0px 0px 6px #000;
+        width: 100%;
+        text-align: center;
+    }
+}

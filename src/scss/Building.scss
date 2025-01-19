@@ -1,0 +1,181 @@
+.Building {
+    background: url(/img/upgradeBg.jpg);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: space-between;
+
+    &_wrapper {
+        position: relative;
+    }
+
+    &_opened {
+        backdrop-filter: blur(10px) brightness(.5);
+        overflow: hidden;
+
+        &_upgrade {
+            padding: 8px;
+
+            &_separator {
+                box-shadow: 0px 0px 8px #000;
+            }
+
+            &_price {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                column-gap: 12px;
+                margin-top: 12px;
+
+                &_count {
+                    text-shadow: 0px 2px 6px #000, 0px 1px 1px #000;
+                    font-weight: bold;
+                    color: #6f6;
+                    position: relative;
+                    font-family: "Tahoma";
+                    font-size: 12px;
+                    margin-top: 6px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 4px;
+
+                    img {
+                        height: 18px;
+                    }
+                }
+            }
+
+            &_desc {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                column-gap: 8px;
+
+                &_img {
+                    min-width: 48px;
+                }
+
+                &_text {
+                    &_name {
+                        font-size: 16px;
+                    }
+
+                    &_flavor {
+                        font-size: 13px;
+                        font-style: italic;
+
+                        &_bot {
+                            font-size: 13px;
+                            opacity: 0.6;
+                            text-align: center;
+                            margin-top: 12px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &_count {
+            padding: 8px;
+            display: flex;
+            width: 100%;
+            align-items: start;
+            column-gap: 24px;
+            justify-content: space-between;
+        }
+
+        &_text {
+            font-size: 14px;
+            color: rgba($color: #fff, $alpha: 0.9);
+
+            &_profit {
+                margin-top: 8px;
+                font-style: italic;
+                font-size: 12px;
+            }
+        }
+
+        &_buy {
+            background: url('/img/menuBg.png');
+            height: 33px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            padding: 0px 8px;
+            padding-top: 3px;
+            box-shadow: 2px 2px 8px #0008;
+
+        }
+    }
+
+    &_decor {
+        min-width: 64px;
+        min-height: 64px;
+        background: url(/img/buildingsTextures.png);
+
+        filter: drop-shadow(0px 3px 2px #000);
+        -webkit-filter: drop-shadow(0px 3px 2px #000);
+        // backdrop-filter: drop-shadow(0px 0px 10px #000);
+    }
+
+    &_count {
+        min-width: 70px;
+        text-align: right;
+        padding-right: 14px;
+        font-size: 40px;
+        opacity: 0.2;
+        color: #000;
+        text-shadow: 0px 0px 8px #fff;
+        letter-spacing: -2.5px;
+        font-weight: 700;
+    }
+
+    &_info {
+        width: 100%;
+
+        &_name {
+            font-weight: bold;
+            letter-spacing: -1px;
+            font-size: 28px;
+            text-shadow: 0px 1px 4px #000;
+            color: #fff;
+            line-height: 20px;
+        }
+
+        &_price {
+            text-shadow: 0px 2px 6px #000, 0px 1px 1px #000;
+            font-weight: bold;
+            color: #6f6;
+            position: relative;
+            font-family: "Tahoma";
+            font-size: 12px;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+
+            img {
+                height: 18px;
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 16px #fed inset, 0px 0px 1px #000;
+        cursor: pointer;
+    }
+
+    &:nth-child(4n-3) {
+        background-position: 0px 64px;
+    }
+
+    &:nth-child(4n-2) {
+        background-position: 0px 128px;
+    }
+
+    &:nth-child(4n-1) {
+        background-position: 0px 192px;
+    }
+}
